@@ -1,4 +1,4 @@
-var customerName = "Alliance  ";
+var customerName = "Alliance";
 
 // <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
 function addCustomerName() {
@@ -14,7 +14,11 @@ function addCustomerName() {
 
 function toggleColors() {
     // <!-- todo: Change all classes named 'tm-white-rect' to 'tm-blue-rect' -->
-
+    let colors = document.querySelectorAll('tm-white-rect')
+    for(i = 0; i < colors.length; i++) {
+        color[i].classList.add('tm-blue-rect');
+        color[i].classList.remove('tm-white-rect');
+    }
 };
 
 function hideElement() {
